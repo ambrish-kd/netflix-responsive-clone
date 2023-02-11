@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden; 
+}
+.header{
+    display: flex;
+    width: 100vw;
+    padding: 26px 56px;
+    position: absolute;
+    flex-direction: column;
+    z-index: 999999;
+}
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+.main-line{
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    text-align: center;
+}
+.main-line p{
+    font-size: 1.1rem;
+}
+.main-line h1, h2, p{
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+.header .logo{
+    fill: #e50914;
+    line-height: normal;
+    height: 36px;
+    display: block;
+    z-index: 9999;
+}
+.head-2{
+    text-align: right;
+}
+.select-img{
+    filter: invert();
+    position: absolute;
+    margin: 6px;
+    z-index: 9999;
+    height: 19px;
+    padding: 2px;
+}
+select{
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-weight: 400;
+    display: inline-block;
+    color: #ffffff;
+    padding: 7px 17px;
+    padding-right: 5px;
+    overflow: hidden;
+    margin-right: 30px;
+    padding-left: 1.375rem;
+    z-index: 9900;
+    white-space: nowrap;
+    line-height: 1.4em;
+}
+option{
+    background-color: #6d6464;
+}
+.sign-in{
+    background-color: #e50914;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 400;
+    z-index: 99999999;
+    color: #ffffff;
+    display: inline-block;
+    padding: 7px 17px;
+}
+.background{
+    background: url(Images/netflix-home.jpg);
+    width: 100%;
+    height: 93vh;
+    z-index: 999;
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 120px -100px 250px #000000, inset -120px -100px 250px #000000; /*Vignette Effect*/
+    opacity: 0.4;
+    position: relative;
+}
+section{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 50px 5%;
+    border-top: 5px solid #454545;
+}
+.page{
+    padding: 3% 10%;
+    align-items: center;
+    position: relative;
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+.media{
+    position: relative;
+    width: 500px;
+}
+.media img{
+    width: 100%;
+    height: 100%;
+}
+.vid1{
+    position: absolute;
+    top: 78px;
+    left: 66px;
+    z-index: -1;
+    width: 364px;
+}
+.vid2 {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 320px;
+    z-index: -1;
+}
+.download{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    height: 100px;
+    width: 350px;
+    gap: 1em;
+    margin-left: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.poster{
+    height: 20px;
+    width: 45px;
+}
+.gif{
+    height: 10px;
+    width: 10px;
+}
+.p-1, .p-2, .p-3, .p-4 {
+    text-align: left;
+}
+.faq{
+    border-top: 5px solid #454545;
+    border-bottom: 5px solid #303030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+h1{
+    font-size: 3rem;
+}
+.faq-h1{
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 4%;
+}
+.questions{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq div h2{
+    background-color: #303030;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 27px;
+    font-size: 1.9rem;
+    text-align: left;
+}
+p{
+    font-size: 1.6rem;
+}
+.faq p{
+    padding-top: 60px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+.input{
+    justify-content: left;
+    width: 750px;
+    position: relative;
+}
+.input input{
+    outline: 0;
+    width: 550px;
+    height: 3.6rem;
+    padding: 25px;
+    font-size: 1.3rem;
+}
+.main-line .input{
+    margin-right: 80px;
+}
+.input .btn{
+    height: 3.6rem;
+    background-color: #e50914;
+    text-align: center;
+    background: #e50914;
+    font-size: 1.4rem;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    padding: 15px 32px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer {
+    max-width: 70%;
+    margin: 1rem auto;
+    padding: 3% 10%;
+    overflow: auto;
+    font-size: 0.9rem;
+}
+.footer a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #999999;
+}
+.footer li{
+    list-style: none;
+    line-height: 2;
+}
+.footer-li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.footer p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.last-p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: rgba(243, 235, 235, 0.6);
+}
+.flex{
+    display: flex;
+}
+
+/* Media query for max width 850px i.e for Tablets */
+@media (max-width:850px){
+    body,html{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        margin:10px;
+        text-align: center;
+    }
+    p{
+        font-size: 1.6rem;
+        margin: 3px;
+        text-align: center;
+    }
+    .main-line .input{    
+        margin-right: 0px;    
+    }
+    .input{
+        width:500px;
+        margin: 5px;
+        justify-content: left;
+    }
+    .input input{
+        width:340px;
+        height:3rem;
+        font-size: 1.2rem;
+        padding:5px;
+    }
+    .input .btn{
+        height:3rem;
+        width:160px;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    .main-line{
+        overflow: hidden;
+        word-spacing:5px;
+        margin: 0%;
+        text-align: left;
+    }
+    .main-line h2{
+        text-align: center;
+    }
+    .page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+        gap:1rem;
+        width:90%;
+    }
+    .page h1{
+        font-size: 2.6rem;
+        line-height: 2rem;
+    }
+    .page p{
+        font-size: 1.8rem;
+    }
+    .first-page,.second-page{
+        flex-direction: column-reverse;
+    }
+    .media{
+        width:500px;
+    }
+    .third-page .media{
+        padding:30px;
+    }
+    .vid1{
+        top:70px;
+        left:51px;
+        width: 400px;;
+    }
+    .vid2{
+        width:270px;
+        top:22px;
+        height:200px;
+        left:115px;
+    }  
+    .p-1, .p-2, .p-3, .p-4{
+        text-align: center;
+        margin: auto;
+    }
+    .p-1{
+        padding:0;
+    }
+    .p-1 p{
+        font-size: 1.8rem;
+    }
+    .download{
+        width:280px;
+        height:70px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .poster{
+        height:50px;
+    }
+    .faq{
+        width:100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .faq h1{
+        font-size: 2rem;
+        margin: 6% 0; 
+    }
+    .questions{
+        margin: 0%;
+        width:100%;
+    }
+    .questions h2{
+        width:100%;
+        margin: 0ch;
+    }
+    .faq p{
+        font-size: 1rem;
+    }
+    .faq .input{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .footer p{
+        font-size: 1rem;
+    }
+}
+
+/* Media query for max width 455px i.e for phones*/
+@media (max-width:455px){
+    h1{
+        font-size: 1.4rem;
+        line-height: 1.3rem;
+        margin:15 px;
+        text-align: center;
+        font-weight: 400;
+    }
+    .main-line{
+        text-align: left;
+    }
+    .main-line .input{
+        margin-right: 0px;    
+    }
+    .first-page{
+        display:flex;
+    }
+    p{
+        font-size: 1rem;
+        margin: 10px;
+        text-align: center;
+    }
+    .main-line h2{
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-align: center;
+    }
+    .media{
+        width:420px;
+    }
+    .vid1{
+        width: 325px;
+    }
+    .vid2{
+        top:15px;
+        left: 99px;
+        width: 220px;
+    }
+    .input{
+        width:340px;
+        justify-content: left;
+    }
+    .input input{
+        width:240px;
+        font-size: 1.2rem;
+    }
+    .input .btn{
+        width:100px;
+        padding: 2px;
+    }
+    .page h1{
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+    .page p{
+        font-size: 1.2rem;
+    }
+    .faq{
+        margin-bottom: 5%;
+    }
+    .faq h1{
+        font-size: 1.7rem;
+        margin: 6% 0; 
+    }
+    .header{
+        padding: 0px;
+        padding-top: 30px;
+    }
+    select{
+        margin-right: 4px;
+    }
+    .logo{
+        margin-right:10px;
+        width: 100px;        
+    }
+    .faq div h2{
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+    .questions{
+        padding-left: 3px;
+    }
+    .footer ul li{
+        font-size: 0.5rem;
+    }
+    .footer p{
+        text-align: left;
+    }
+    .footer{
+        margin-top: 5%;
+        width:100%; 
+    }
+    .footer-li{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0;
+    }
+    .faq .input{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
